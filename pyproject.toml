@@ -1,8 +1,8 @@
 [project]
-name = "motion-challenge-ufo"
+name = "MotionChallenge-ufo"
 version = "0.1.0"
 requires-python = ">=3.12,<3.13"
-dependencies = ["motion-challenge"]
+dependencies = ["MotionChallenge-Core"]
 
 [tool.uv.sources]
-motion-challenge = {path = "MotionChallenge-Core", editable = true}
+motionchallenge-core = {path = "MotionChallenge-Core", editable = true}

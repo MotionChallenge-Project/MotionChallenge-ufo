@@ -1,7 +1,7 @@
 {
   "model": "ufo",
   "display_name": "UFO FB-CPR-Aux 192M",
-  "submitter": "Motion Challenge",
+  "submitter": "MotionChallenge",
   "submission_type": "maintainer reproduction, not author submission",
   "upstream": "https://github.com/Roboparty/UFO",
   "source_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",

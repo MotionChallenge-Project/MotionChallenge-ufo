@@ -62,7 +62,7 @@ wheels = [
 ]
 
 [[package]]
-name = "motion-challenge"
+name = "motionchallenge-core"
 version = "0.0.2.dev0"
 source = { editable = "MotionChallenge-Core" }
 dependencies = [
@@ -83,15 +83,15 @@ requires-dist = [
 ]
 
 [[package]]
-name = "motion-challenge-ufo"
+name = "motionchallenge-ufo"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
-    { name = "motion-challenge" },
+    { name = "motionchallenge-core" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "motion-challenge", editable = "MotionChallenge-Core" }]
+requires-dist = [{ name = "motionchallenge-core", editable = "MotionChallenge-Core" }]
 
 [[package]]
 name = "mujoco"
