@@ -17,6 +17,6 @@ Missing data and both author weights are downloaded and SHA256-checked.
 Results and traces stay outside Git.
 
 Use cached artifacts with `--weights PATH --artifact encoder=PATH --data PATH --offline`.
-The root `motion-challenge` submodule owns data, physics, scoring and verification.
+The root `MotionChallenge-Core` submodule owns data, physics, scoring and verification.
 
 [Inference validation](validation/README.md) · [Native parity report](validation/native-parity.json)

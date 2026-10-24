@@ -5,4 +5,4 @@ requires-python = ">=3.12,<3.13"
 dependencies = ["motion-challenge"]
 
 [tool.uv.sources]
-motion-challenge = {path = "motion-challenge", editable = true}
+motion-challenge = {path = "MotionChallenge-Core", editable = true}

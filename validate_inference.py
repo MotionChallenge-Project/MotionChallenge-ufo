@@ -78,7 +78,7 @@ def main():
     assert policy.cfg['observation_order'] == metadata['observation_order']
     for field, attr in [('default_joint_pos', 'default'), ('joint_kp', 'kp'), ('joint_kd', 'kd'), ('action_scale', 'scale')]:
         np.testing.assert_array_equal(getattr(policy, attr), [metadata['deployment'][field][n] for n in policy.names])
-    world = World(root/'motion-challenge/robots/g1-29dof-cpu-v0.json')
+    world = World(root/'MotionChallenge-Core/robots/g1-29dof-cpu-v0.json')
     rng = np.random.default_rng(241024)
     shuffle = rng.permutation(29)
     names = tuple(np.asarray(world.joint_names)[shuffle])

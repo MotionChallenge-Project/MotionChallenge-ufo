@@ -64,7 +64,7 @@ wheels = [
 [[package]]
 name = "motion-challenge"
 version = "0.0.2.dev0"
-source = { editable = "motion-challenge" }
+source = { editable = "MotionChallenge-Core" }
 dependencies = [
     { name = "mujoco" },
     { name = "numpy" },
@@ -91,7 +91,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "motion-challenge", editable = "motion-challenge" }]
+requires-dist = [{ name = "motion-challenge", editable = "MotionChallenge-Core" }]
 
 [[package]]
 name = "mujoco"
