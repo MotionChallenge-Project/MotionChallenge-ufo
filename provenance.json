@@ -2,7 +2,7 @@
   "model": "ufo",
   "display_name": "UFO FB-CPR-Aux 192M",
   "submitter": "MotionChallenge",
-  "submission_type": "maintainer reproduction, not author submission",
+  "submission_type": "MotionChallenge reproduction",
   "upstream": "https://github.com/Roboparty/UFO",
   "source_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
   "training_source_commit": "973b805e87cac29ac9484296be0a71b6f4764ad4",
@@ -10,7 +10,7 @@
   "encoder_sha256": "4333441ba4a393f9493545f5c8a706fa912e8ec358dae1c05c09e31aaae00d4b",
   "author_inference_review": "Numerical comparison against pinned author inference: validation/native-parity.json",
   "inference_validation": "validation/native-parity.json",
-  "benchmark_physics": "Shared canonical G1 nominal physics and initialization. See validation/README.md for exact-endpoint handling.",
+  "benchmark_physics": "Shared canonical G1 nominal physics and initialization.",
   "checkpoint_origin": {
     "author_release_url": "https://github.com/Roboparty/UFO/blob/973b805e87cac29ac9484296be0a71b6f4764ad4/README.md",
     "author_release_label": "RoboParty / UFO",
