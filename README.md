@@ -12,7 +12,7 @@ uv run evaluate.py
 ```
 
 One complete rollout produces success, completion and six MPBPE values in a
-verified `result.json`. MuJoCo 3.17 CPU batch; `--jobs 8` sets parallelism.
+verified `result.json`. MuJoCo 3.17 CPU batch; `--jobs` sets parallelism.
 Missing data and both author weights are downloaded and SHA256-checked.
 Results and traces stay outside Git.
 

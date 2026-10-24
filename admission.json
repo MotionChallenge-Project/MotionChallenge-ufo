@@ -13,9 +13,9 @@
     "author_release_label": "RoboParty / UFO",
     "kind": "author_file",
     "kind_label": "Author-released checkpoint",
-    "artifact_page_url": "https://huggingface.co/xuewang/ufo-g1-policy/blob/da3727034a058eae588a16af142764ee34bdada4/exported/FBcprAuxModel.onnx",
+    "artifact_page_url": "https://huggingface.co/xuewang/ufo-g1-policy/blob/da3727034a058eae588a16af142764ee34bdada4/g1_policy/exported/FBcprAuxModel.onnx",
     "original_filename": "FBcprAuxModel.onnx",
-    "download_url": "https://huggingface.co/xuewang/ufo-g1-policy/resolve/da3727034a058eae588a16af142764ee34bdada4/exported/FBcprAuxModel.onnx",
+    "download_url": "https://huggingface.co/xuewang/ufo-g1-policy/resolve/da3727034a058eae588a16af142764ee34bdada4/g1_policy/exported/FBcprAuxModel.onnx",
     "sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
     "verification": "Official project links the artifact repository; its release manifest binds the training and deployment commits and the SHA256 of both ONNX files."
   },
@@ -35,10 +35,6 @@
   "handling": "The encoder input named privileged_state is computed exclusively from REFERENCE frames. Actual actor inputs are proprioception/history; released slew limits and endpoint behavior are retained.",
   "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
   "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
-  "new_evaluation": {
-    "status": "queued",
-    "inherited_scores": false
-  },
   "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-ufo",
   "dependency_test": {
     "path": "validation/observation-access.json",
