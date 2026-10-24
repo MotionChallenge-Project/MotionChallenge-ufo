@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "cases": 160,
+  "resets": 4,
+  "endpoint_cases": 14,
+  "max_abs_error": {
+    "reference_state": 1.1920928955078125e-07,
+    "reference_privileged": 7.748603820800781e-07,
+    "latent": 4.1365623474121094e-05,
+    "actor_observation": 3.1828880310058594e-05,
+    "action": 1.5974044799804688e-05,
+    "motor_target": 4.862272627526032e-06,
+    "history": 1.5974044799804688e-05,
+    "reset_history": 0.0,
+    "kp": 0.0,
+    "kd": 0.0,
+    "forced_clip_slew": 2.249269752840899e-06
+  },
+  "limits": {
+    "reference_state": 0.0002,
+    "reference_privileged": 0.0002,
+    "latent": 0.0002,
+    "actor_observation": 0.0002,
+    "action": 0.0002,
+    "motor_target": 0.0002,
+    "history": 0.0002,
+    "reset_history": 0.0,
+    "kp": 0.0,
+    "kd": 0.0,
+    "forced_clip_slew": 0.0002
+  },
+  "deploy_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
+  "training_commit": "973b805e87cac29ac9484296be0a71b6f4764ad4",
+  "checkpoint_sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
+  "encoder_sha256": "4333441ba4a393f9493545f5c8a706fa912e8ec358dae1c05c09e31aaae00d4b",
+  "scope": "Author reference observation functions, released backward encoder, native ObsGroup and deployment step including action clipping, rescaling, target clipping and slew limits. Shuffled SDK joints, near-vertical rotations, zero history resets, truncated windows and forced out-of-range actions.",
+  "benchmark_boundary": "Three targets start at t+20ms. A fourth timing probe identifies the endpoint but is not encoded. Native endpoint-exclusive windows shrink; the final context is held to finish the canonical clip, without viewer wraparound."
+}

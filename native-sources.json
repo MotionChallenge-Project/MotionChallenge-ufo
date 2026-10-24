@@ -1,0 +1,34 @@
+{
+  "deploy_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
+  "training_commit": "973b805e87cac29ac9484296be0a71b6f4764ad4",
+  "files": {
+    "ufo-release-source": {
+      "LICENSE": "db2e35513dbadcdc67f5819a3bfee2777786538dd3531620cd5fbd4b6ed6e538",
+      "README.md": "a513e2d7350297a644b551ac9444747d06ce0c564ed451b6eeddb2bc914b3878",
+      "rl_policy/ufo_policy.py": "841b7be58d2a5d489d69c61bb34e1b7fb6616989cb97c62e96f3ae792c08c325",
+      "rl_policy/observations.py": "29d37d5578c4a412dd1f6a812d46244e249964738d65eb75e9efd5e3a9e39a4d",
+      "utils/policy.py": "0ce4be8618099830c0efc439c0cd3e4811a760e01cb371e78c1542eae06445b0",
+      "utils/math.py": "606214d29a00029f5b34c98a7f533141228821ad285cc32943c18e274a73bed2",
+      "utils/strings.py": "d2f01bbb9325167ce539a2b53264c9081c5affc1a8f7f326926782b0f5a1fc4a",
+      "rl_policy/utils/state_processor.py": "4e1b5bd54364a629dcfd5abd27c11d4c0dd0bd0798e276b11dd73f6e9fb23818",
+      "rl_policy/utils/command_sender.py": "6d6ce61d67fbce0d19af3dd94253e06f921003a5071aa020b178ebb6c075ce71",
+      "config/tasks/tracking.yaml": "3130b2562fa88b2c667ca3385eb1417ff1477e088efb7a3a189a58370761d97a",
+      "config/robot/g1.yaml": "fe253e5bf8cee29d93809fa1056c1e74c8a55790b4db1fcf2fc0d729a4f34044",
+      "config/policy/g1_policy.yaml": "56e5f3add6c7d42f7b14254ff8815896df9f3ce3dbd2fee2f798a75c05dfc7f5",
+      "scripts/teleop/default_mimic_obs.py": "d9e3726077aba72ff1e4f8dddadde7f337a17e2561652d3ad30f02267e762cdb"
+    },
+    "ufo-training-source": {
+      "LICENSE": "db2e35513dbadcdc67f5819a3bfee2777786538dd3531620cd5fbd4b6ed6e538",
+      "ufo/math.py": "e9c067f97fc4c586a29880de3938de1ee2f287d59c734f599e91597d11ad2703",
+      "ufo/tools/export_onnx.py": "a86f7f2754b7f012e576faa3bdabb57e01cb6a3a797859e0848b1a48599b1df1",
+      "ufo/motion/reference.py": "17a085cad46fba8149c3d9f10b04179b3abc50a92ec03497c5fbff01ddefeb97",
+      "ufo/inference/runtime.py": "a11a137b05440901e14a7c209151805c65d49a79f5d142f9737644236c9751e7",
+      "ufo/inference/tracking_inference.py": "397006918aba9e31af9dbda5d0e292ab8bdd1a0b14edb94cbf0adb5cb621c438",
+      "ufo/envs/observations.py": "93e7e49141a72b463def89cfd368914716fe4694f8be33f13a5203ec0754252a",
+      "ufo/agents/common/networks.py": "0b6c3b9fb5bf2311ce602a807253db67b24c098df3565be67245021d04a924b6",
+      "ufo/agents/common/base.py": "72ecbd238a16c4bc1f667f41d112c1003ae98339a6ef1eeeefb4915cd23121ff",
+      "ufo/agents/fb_cpr_aux/model.py": "a58d8244c97ee897009e3a45a7f9d04f1a9b4b141a99d989519cf4ebde5219df",
+      "configs/robots/g1_29dof.yaml": "ad13b256d5956aeb4a424bf4802a21d99cbf1890aa3e7af2cd22f64393e13288"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "id": "ufo-fb-cpr-aux-g1-v1",
+  "entrypoint": "adapter:create",
+  "control_period_s": 0.02,
+  "reference_offsets_s": [
+    0.02,
+    0.04,
+    0.06,
+    0.08
+  ],
+  "reference_history_s": 0.0,
+  "reference_preview_s": 0.08,
+  "state_access": "privileged-state-v0",
+  "action_mode": "joint-pd-feedforward",
+  "weights": "checkpoints/FBcprAuxModel.onnx",
+  "weights_url": "https://huggingface.co/xuewang/ufo-g1-policy/resolve/da3727034a058eae588a16af142764ee34bdada4/exported/FBcprAuxModel.onnx",
+  "weights_sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
+  "inference_config": "policy.json",
+  "inference_config_sha256": "663bdc125c15a3ee8b2e443ba3506442aaa1481894705e9c88c026c823d93f68",
+  "artifacts": {
+    "encoder": {
+      "path": "checkpoints/backward_encoder.onnx",
+      "url": "https://huggingface.co/xuewang/ufo-g1-policy/resolve/da3727034a058eae588a16af142764ee34bdada4/exported/backward_encoder.onnx",
+      "sha256": "4333441ba4a393f9493545f5c8a706fa912e8ec358dae1c05c09e31aaae00d4b"
+    }
+  },
+  "source_repository": "https://github.com/Roboparty/UFO",
+  "source_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
+  "official": false
+}
