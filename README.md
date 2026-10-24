@@ -20,3 +20,9 @@ Use cached artifacts with `--weights PATH --artifact encoder=PATH --data PATH --
 The root `MotionChallenge-Core` submodule owns data, physics, scoring and verification.
 
 [Inference validation](validation/README.md) · [Native parity report](validation/native-parity.json)
+
+## Observation track
+
+Default: **ideal proprioception, no global position feedback**. [Admission and special handling](admission.json) · [Rules](MotionChallenge-Core/docs/OBSERVATIONS.md).
+
+For the original privileged-state track: `uv run evaluate.py --track privileged`.

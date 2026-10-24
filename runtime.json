@@ -26,5 +26,13 @@
   },
   "source_repository": "https://github.com/Roboparty/UFO",
   "source_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
-  "official": false
+  "official": false,
+  "default_track": "ideal-proprioception",
+  "observation_tracks": {
+    "ideal-proprioception": {
+      "entrypoint": "restricted:create",
+      "admission_record": "admission.json",
+      "admission_sha256": "80dcbf685477ec07fd494a3c3acc52d960e0ab5e966d87b286c9396923122ca2"
+    }
+  }
 }

@@ -1,0 +1,50 @@
+{
+  "schema": "MotionChallenge/observation-admission-v1",
+  "model": "ufo",
+  "display_name": "UFO FB-CPR-Aux 192M",
+  "state_access": "ideal-proprioceptive-no-position-v1",
+  "status": "inference_verified",
+  "checkpoint_sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
+  "auxiliary_artifacts": {
+    "encoder": "4333441ba4a393f9493545f5c8a706fa912e8ec358dae1c05c09e31aaae00d4b"
+  },
+  "checkpoint_origin": {
+    "author_release_url": "https://github.com/Roboparty/UFO/blob/973b805e87cac29ac9484296be0a71b6f4764ad4/README.md",
+    "author_release_label": "RoboParty / UFO",
+    "kind": "author_file",
+    "kind_label": "Author-released checkpoint",
+    "artifact_page_url": "https://huggingface.co/xuewang/ufo-g1-policy/blob/da3727034a058eae588a16af142764ee34bdada4/exported/FBcprAuxModel.onnx",
+    "original_filename": "FBcprAuxModel.onnx",
+    "download_url": "https://huggingface.co/xuewang/ufo-g1-policy/resolve/da3727034a058eae588a16af142764ee34bdada4/exported/FBcprAuxModel.onnx",
+    "sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
+    "verification": "Official project links the artifact repository; its release manifest binds the training and deployment commits and the SHA256 of both ONNX files."
+  },
+  "author_source": "https://github.com/Roboparty/UFO",
+  "author_commit": "ee5c57082bb4223bdac215bff7a607cbe0a93cd1",
+  "base_adapter_commit": "d2127c0cc4405bfe25ca5eabbce88355bbff7203",
+  "production_source_sha256": {
+    "adapter.py": "541e2063cbf32f6c9bbfa627727ccf0845f8dddbdab5916a4560932fc15d2882",
+    "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+    "native-sources.json": "36b550ef16d0c838e05262a2d59b16a05dff951c4d1016f0987a96fd02639bda",
+    "policy.json": "663bdc125c15a3ee8b2e443ba3506442aaa1481894705e9c88c026c823d93f68",
+    "validate_inference.py": "cc78d8260bf1de25855ef6e150a49a258a2ee5aed46c8e04bc7be87807dbc1bf"
+  },
+  "prior_native_parity_sha256": {
+    "validation/native-parity.json": "8691886d055431be897e18eec559c4d0c87e79d2d904dbb79ce24aaf96895cb4"
+  },
+  "handling": "The encoder input named privileged_state is computed exclusively from REFERENCE frames. Actual actor inputs are proprioception/history; released slew limits and endpoint behavior are retained.",
+  "actual_position_integration": "No explicit integration or odometry in the inspected deployed adapter source; blocked paths are listed separately.",
+  "special_handling": "FK of allowed state at fixed synthetic origin (0,0,0); never actual measured origin.",
+  "new_evaluation": {
+    "status": "queued",
+    "inherited_scores": false
+  },
+  "repository": "https://github.com/MotionChallenge-Project/MotionChallenge-ufo",
+  "dependency_test": {
+    "path": "validation/observation-access.json",
+    "sha256": "49770b90e370e5f4abad81f807be01643c6f306be1220458a81e35782d9a17dd",
+    "code": "validate_observations.py",
+    "cases": 160,
+    "resets": 4
+  }
+}
