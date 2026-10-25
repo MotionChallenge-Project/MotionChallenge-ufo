@@ -29,6 +29,8 @@
   "official": false,
   "observation_contract": {
     "admission_record": "admission.json",
-    "admission_sha256": "08cf9c2424a42e24040145bf2cf6f2a3729b24183940430d2ea98e430c78d5eb"
-  }
+    "admission_sha256": "facc23bf83cf8642a51524092f95ce5f8c391a4ce4b17606b5a847b3372fbba8"
+  },
+  "batch_entrypoint": "parallel:create",
+  "inference_workers": 4
 }

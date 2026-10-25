@@ -1,0 +1,100 @@
+{
+  "schema": "MotionChallenge/inference-concurrency-v1",
+  "core": "da0aec4023bbc3d29be67e1fce9fa9ab8a48c4b5",
+  "inference": {
+    "model": "ufo",
+    "scope": "40 real LAFAN initial states, six advancing reference steps, two independent resets, reordered slots, partial reset; exact original frozen inference comparison",
+    "baseline_adapter": "https://github.com/MotionChallenge-Project/MotionChallenge-ufo/tree/db080c3b3393d1dc52e2f8da7fa4538a913ce7e2",
+    "candidate_source_sha256": {
+      "adapter.py": "569b0b6ed51f71f876f032300e1df4b4a1baa8876c4e0b58fcff55dd06a523af",
+      "parallel.py": "24f5d3b68572d209c8570f8e346ad63b158aac17a86950aebf49c397d2d234fc",
+      "validate_observations.py": "86c951c8756a7a1b0bdb7ba8ef17ab8d070210883d0235fc4c5fba801a38ae32",
+      "evaluate.py": "0ebb8c761f00dd963f2e45c85ecb94628273911bb1edfc0f2621e8fc458cb4ff",
+      "validate_inference.py": "cc78d8260bf1de25855ef6e150a49a258a2ee5aed46c8e04bc7be87807dbc1bf",
+      "restricted.py": "8f8fdcc4dc41813cf5d8f8c55e4b219310145f74a540457b52c41843a49bd831"
+    },
+    "checkpoint_sha256": "fe58bf17427679a0f0a22ad5f05d7579373a365936154770f31e815e8f0e4ad7",
+    "records": [
+      {
+        "workers": 1,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.9033614136278629,
+          0.9986767843365669
+        ],
+        "median_40_calls_s": 0.1585031831637025
+      },
+      {
+        "workers": 2,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.6097338646650314,
+          0.6605739705264568
+        ],
+        "median_40_calls_s": 0.10585898626595736
+      },
+      {
+        "workers": 4,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.41668882966041565,
+          0.42061708495020866
+        ],
+        "median_40_calls_s": 0.06977549288421869
+      },
+      {
+        "workers": 8,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.40839913487434387,
+          0.4021775797009468
+        ],
+        "median_40_calls_s": 0.0675480595479409
+      },
+      {
+        "workers": 16,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.419704906642437,
+          0.4086083918809891
+        ],
+        "median_40_calls_s": 0.0690261082102855
+      },
+      {
+        "workers": 32,
+        "exact": true,
+        "max_abs_delta": 0.0,
+        "seconds_240_calls": [
+          0.4140792079269886,
+          0.4236650802195072
+        ],
+        "median_40_calls_s": 0.06981202401220798
+      }
+    ],
+    "partial_reset_exact": true,
+    "passed": true,
+    "selected_workers": 4,
+    "selected_speedup": 2.2716168186258927
+  },
+  "closed_loop": {
+    "model": "ufo",
+    "passed": true,
+    "scope": "all40 clips, first2 seconds, physics feedback, exact pose and metric comparison against frozen formal source",
+    "pose_samples": 4000,
+    "seconds": {
+      "baseline": 19.993191309273243,
+      "candidate": 12.122085087001324
+    },
+    "speedup": 1.64931949955641,
+    "workers": 4,
+    "physical_cpus": "32,34,36,38,40,42,44,46",
+    "effective_scalar_workers": 4,
+    "baseline_result_sha256": "01a1365be06e4be70b044023dc1b33bf5ed4b04caf3e49ea6071653a78400fb9",
+    "candidate_result_sha256": "a282d9383d8da5eb4a6cdaea4d7ace040dc06ea7d65b256ec23195c10e0d93c6"
+  }
+}

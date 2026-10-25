@@ -1,6 +1,6 @@
 """UFO FB-CPR-Aux: released backward encoder and native 50 Hz deployment."""
+from motion_challenge.adapters.onnx import cpu_session
 import numpy as np
-import onnxruntime as ort
 
 from motion_challenge.adapters.onnx import ONNXController, vector
 from motion_challenge.sdk import ControlCommand
@@ -27,9 +27,7 @@ class UFO(ONNXController):
         path = root / item['path']
         if sha256_file(path) != item['sha256']:
             raise ValueError('encoder checksum mismatch')
-        options = ort.SessionOptions()
-        options.intra_op_num_threads = options.inter_op_num_threads = 1
-        self.encoder = ort.InferenceSession(str(path), sess_options=options, providers=['CPUExecutionProvider'])
+        self.encoder = cpu_session(path, item['sha256'])
         self.lower = vector(self.cfg['joint_pos_lower_limit'], self.names)
         self.upper = vector(self.cfg['joint_pos_upper_limit'], self.names)
         self.max_delta = vector(self.cfg['joint_velocity_limit'], self.names)*runtime['control_period_s']*self.cfg['q_target_slew_safety_factor']
